@@ -1,0 +1,397 @@
+{
+  "games": [
+    {
+      "home": {
+        "team": "PIT",
+        "starter": "Madison Bumgarner" },
+      "away": {
+        "team": "SFG",
+        "starter": "Edinson Volquez" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "OAK",
+        "starter": "Jon Lester" },
+      "away": {
+        "team": "KCR",
+        "starter": "James Shields" },
+      "winner": "KCR" },
+    {
+      "away": {
+        "team": "SFG",
+        "starter": "Jake Peavy" },
+      "home": {
+        "team": "WSN",
+        "starter": "Stephen Strasburg" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "WSN",
+        "starter": "Jordan Zimmermann" },
+      "away": {
+        "team": "SFG",
+        "starter": "Tim Hudson" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Madison Bumgarner" }, 
+      "away": {
+        "team": "WSN",
+        "starter": "Doug Fister" },
+      "winner": "WSN" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Ryan Vogelsong" }, 
+      "away": {
+        "team": "WSN",
+        "starter": "Gio Gonzalez" },
+      "winner": "SFG" },
+    {
+      "home":{
+        "team": "LAD",
+        "starter": "Clayton Kershaw" },
+      "away": {
+        "team": "STL",
+        "starter": "Adam Wainwright" },
+      "winner": "STL" },
+    {
+      "home": {
+        "team": "LAD",
+        "starter": "Zack Greinke" },
+      "away": {
+        "team": "STL",
+        "starter": "Lance Lynn" },
+      "winner": "LAD" },
+    {
+      "home": {
+        "team": "STL",
+        "starter": "John Lackey" },
+      "away": {
+        "team": "LAD",
+        "starter": "Hyun-jin Ryu" },
+      "winner": "STL" },
+    {
+      "home": {
+        "team": "STL",
+        "starter": "Shelby Miller" },
+      "away": {
+        "team": "LAD",
+        "starter": "Clayton Kershaw" },
+      "winner": "STL" },
+    {
+      "home": {
+        "team": "LAA",
+        "starter": "Jered Weaver" },
+      "away": {
+        "team": "KCR",
+        "starter": "Jason Vargas" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "LAA",
+        "starter": "Matt Shoemaker" },
+      "away": {
+        "team": "KCR",
+        "starter": "Yordano Ventura" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "KCR",
+        "starter": "James Shields" },
+      "away": {
+        "team": "LAA",
+        "starter": "C.J. Wilson" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "BAL",
+        "starter": "Chris Tillman" },
+      "away": {
+        "team": "DET",
+        "starter": "Max Scherzer" },
+      "winner": "BAL" },
+    {
+      "home": {
+        "team": "BAL",
+        "starter": "Wei-Yin Chen" },
+      "away": {
+        "team": "DET",
+        "starter": "Justin Verlander" },
+      "winner": "BAL" },
+    {
+      "home": {
+        "team": "DET",
+        "starter": "David Price" },
+      "away": {
+        "team": "BAL",
+        "starter": "Bud Norris" },
+      "winner": "BAL" },
+    {
+      "home": {
+        "team": "STL",
+        "starter": "Adam Wainwright" },
+      "away": {
+        "team": "SFG",
+        "starter": "Madison Bumgarner" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "STL",
+        "starter": "Lance Lynn" },
+      "away": {
+        "team": "SFG",
+        "starter": "Jake Peavy" },
+      "winner": "STL" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Tim Hudson" },
+      "away": {
+        "team": "STL",
+        "starter": "John Lackey" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Ryan Vogelsong" }, 
+      "away": {
+        "team": "STL",
+        "starter": "Shelby Miller" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Madison Bumgarner" },
+      "away": {
+        "team": "STL",
+        "starter": "Adam Wainwright" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "BAL",
+        "starter": "Chris Tillman" },
+      "away": {
+        "team": "KCR",
+        "starter": "James Shields" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "BAL",
+        "starter": "Bud Norris" },
+      "away": {
+        "team": "KCR",
+        "starter": "Yordano Ventura" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "KCR",
+        "starter": "Jeremy Guthrie" },
+      "away": {
+        "team": "BAL",
+        "starter": "Wei-Yin Chen" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "KCR",
+        "starter": "Jason Vargas" },
+      "away": {
+        "team": "BAL",
+        "starter": "Miguel Gonzalez" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "KCR",
+        "starter": "James Shields" },
+      "away": {
+        "team": "SFG",
+        "starter": "Madison Bumgarner" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "KCR",
+        "starter": "Yordano Ventura" },
+      "away": {
+        "team": "SFG",
+        "starter": "Jake Peavy" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Tim Hudson" },
+      "away": {
+        "team": "KCR",
+        "starter": "Jeremy Guthrie" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Ryan Vogelsong" },
+      "away": {
+        "team": "KCR",
+        "starter": "Jason Vargas" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "SFG",
+        "starter": "Madison Bumgarner" },
+      "away": {
+        "team": "KCR",
+        "starter": "James Shields" },
+      "winner": "SFG" },
+    {
+      "home": {
+        "team": "KCR",
+        "starter": "Yordano Ventura" },
+      "away": {
+        "team": "SFG",
+        "starter": "Jake Peavy" },
+      "winner": "KCR" },
+    {
+      "home": {
+        "team": "KCR",
+        "starter": "Jeremy Guthrie" },
+      "away": {
+        "team": "SFG",
+        "starter": "Tim Hudson" },
+      "winner": "SFG" }
+  ],
+  "pitchers": {
+    "Madison Bumgarner": {
+      "fip": 3.05,
+      "era": 2.98},
+    "Edinson Volquez": {
+      "fip": 4.15,
+      "era": 3.04},
+    "Jon Lester": {
+      "fip": 3.13,
+      "era": 2.46},
+    "James Shields": {
+      "fip": 3.59,
+      "era": 3.21},
+    "Jake Peavy": {
+      "fip": 3.03,
+      "era": 3.73},
+    "Stephen Strasburg": {
+      "fip": 2.94,
+      "era": 3.14},
+    "Jordan Zimmermann": {
+      "fip": 2.68,
+      "era": 2.66},
+    "Tim Hudson": {
+      "fip": 3.54,
+      "era": 3.57},
+    "Ryan Vogelsong": {
+      "fip": 3.85,
+      "era": 4.00},
+    "Gio Gonzalez": {
+      "fip": 3.02,
+      "era": 3.57},
+    "Doug Fister": {
+      "fip": 3.93,
+      "era": 2.41},
+    "Clayton Kershaw": {
+      "fip": 1.81,
+      "era": 1.77},
+    "Adam Wainwright": {
+      "fip": 2.88,
+      "era": 2.38},
+    "Zack Greinke": {
+      "fip": 2.97,
+      "era": 2.71},
+    "Lance Lynn": {
+      "fip": 3.35,
+      "era": 2.74},
+    "John Lackey": {
+      "fip": 3.78,
+      "era": 3.82},
+    "Hyun-jin Ryu": {
+      "fip": 2.62,
+      "era": 3.38},
+    "Shelby Miller": {
+      "fip": 4.54,
+      "era": 3.74},
+    "Jered Weaver": {
+      "fip": 4.19,
+      "era": 3.59},
+    "Jason Vargas": {
+      "fip": 3.84,
+      "era": 3.71},
+    "Matt Shoemaker": {
+      "fip": 3.26,
+      "era": 3.04},
+    "Yordano Ventura": {
+      "fip": 3.60,
+      "era": 3.20},
+    "C.J. Wilson": {
+      "fip": 4.31,
+      "era": 4.51},
+    "Chris Tillman": {
+      "fip": 4.01,
+      "era": 3.34},
+    "Max Scherzer": {
+      "fip": 2.85,
+      "era": 3.15},
+    "Wei-Yin Chen": {
+      "fip": 3.89,
+      "era": 3.54},
+    "Justin Verlander": {
+      "fip": 3.74,
+      "era": 4.54},
+    "David Price": {
+      "fip": 2.78,
+      "era": 3.26},
+    "Bud Norris": {
+      "fip": 4.22,
+      "era": 3.65},
+    "Jeremy Guthrie": {
+      "fip": 4.32,
+      "era": 4.04},
+    "Miguel Gonzalez": {
+      "fip": 4.89,
+      "era": 3.23}
+  },
+  "teams": {
+    "PIT": {
+      "OPS": 0.734,
+      "BAT_AVG": 0.259,
+      "WIN_PCT": 0.543 },
+    "SFG": {
+      "OPS": 0.699,
+      "BAT_AVG": 0.255,
+      "WIN_PCT": 0.543 },
+    "OAK": {
+      "OPS": 0.700,
+      "BAT_AVG": 0.244,
+      "WIN_PCT": 0.543 },
+    "KCR": {
+      "OPS": 0.690,
+      "BAT_AVG": 0.263,
+      "WIN_PCT": 0.549 },
+    "WSN": {
+      "OPS": 0.714,
+      "BAT_AVG": 0.253,
+      "WIN_PCT": 0.593 },
+    "LAD": {
+      "OPS": 0.738,
+      "BAT_AVG": 0.265,
+      "WIN_PCT": 0.580 },
+    "STL": {
+      "OPS": 0.689,
+      "BAT_AVG": 0.253,
+      "WIN_PCT": 0.556 },
+    "LAA": {
+      "OPS": 0.728,
+      "BAT_AVG": 0.259,
+      "WIN_PCT": 0.605 },
+    "BAL": {
+      "OPS": 0.734,
+      "BAT_AVG": 0.256,
+      "WIN_PCT": 0.593 },
+    "DET": {
+      "OPS": 0.757,
+      "BAT_AVG": 0.277,
+      "WIN_PCT": 0.556 }
+  }
+}
