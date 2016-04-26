@@ -7,7 +7,8 @@
       "away": {
         "team": "SFG",
         "starter": "Edinson Volquez" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 0 },
     {
       "home": {
         "team": "OAK",
@@ -15,15 +16,17 @@
       "away": {
         "team": "KCR",
         "starter": "James Shields" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 0 },
     {
-      "away": {
-        "team": "SFG",
-        "starter": "Jake Peavy" },
       "home": {
         "team": "WSN",
         "starter": "Stephen Strasburg" },
-      "winner": "SFG" },
+      "away": {
+        "team": "SFG",
+        "starter": "Jake Peavy" },
+      "winner": "SFG",
+      "x": 0 },
     {
       "home": {
         "team": "WSN",
@@ -31,7 +34,8 @@
       "away": {
         "team": "SFG",
         "starter": "Tim Hudson" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 0 },
     {
       "home": {
         "team": "SFG",
@@ -39,7 +43,8 @@
       "away": {
         "team": "WSN",
         "starter": "Doug Fister" },
-      "winner": "WSN" },
+      "winner": "WSN",
+      "x": 0 },
     {
       "home": {
         "team": "SFG",
@@ -47,7 +52,8 @@
       "away": {
         "team": "WSN",
         "starter": "Gio Gonzalez" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 1 },
     {
       "home":{
         "team": "LAD",
@@ -55,7 +61,8 @@
       "away": {
         "team": "STL",
         "starter": "Adam Wainwright" },
-      "winner": "STL" },
+      "winner": "STL",
+      "x": 0 },
     {
       "home": {
         "team": "LAD",
@@ -63,7 +70,8 @@
       "away": {
         "team": "STL",
         "starter": "Lance Lynn" },
-      "winner": "LAD" },
+      "winner": "LAD",
+      "x": 1 },
     {
       "home": {
         "team": "STL",
@@ -71,7 +79,8 @@
       "away": {
         "team": "LAD",
         "starter": "Hyun-jin Ryu" },
-      "winner": "STL" },
+      "winner": "STL",
+      "x": 1 },
     {
       "home": {
         "team": "STL",
@@ -79,7 +88,8 @@
       "away": {
         "team": "LAD",
         "starter": "Clayton Kershaw" },
-      "winner": "STL" },
+      "winner": "STL",
+      "x": 1 },
     {
       "home": {
         "team": "LAA",
@@ -87,7 +97,8 @@
       "away": {
         "team": "KCR",
         "starter": "Jason Vargas" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 0 },
     {
       "home": {
         "team": "LAA",
@@ -95,7 +106,8 @@
       "away": {
         "team": "KCR",
         "starter": "Yordano Ventura" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 0 },
     {
       "home": {
         "team": "KCR",
@@ -103,7 +115,8 @@
       "away": {
         "team": "LAA",
         "starter": "C.J. Wilson" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 1 },
     {
       "home": {
         "team": "BAL",
@@ -111,7 +124,8 @@
       "away": {
         "team": "DET",
         "starter": "Max Scherzer" },
-      "winner": "BAL" },
+      "winner": "BAL",
+      "x": 1 },
     {
       "home": {
         "team": "BAL",
@@ -119,7 +133,8 @@
       "away": {
         "team": "DET",
         "starter": "Justin Verlander" },
-      "winner": "BAL" },
+      "winner": "BAL",
+      "x": 1 },
     {
       "home": {
         "team": "DET",
@@ -127,7 +142,8 @@
       "away": {
         "team": "BAL",
         "starter": "Bud Norris" },
-      "winner": "BAL" },
+      "winner": "BAL",
+      "x": 0 },
     {
       "home": {
         "team": "STL",
@@ -135,7 +151,8 @@
       "away": {
         "team": "SFG",
         "starter": "Madison Bumgarner" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 0 },
     {
       "home": {
         "team": "STL",
@@ -143,7 +160,8 @@
       "away": {
         "team": "SFG",
         "starter": "Jake Peavy" },
-      "winner": "STL" },
+      "winner": "STL",
+      "x": 1 },
     {
       "home": {
         "team": "SFG",
@@ -151,7 +169,8 @@
       "away": {
         "team": "STL",
         "starter": "John Lackey" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 1 },
     {
       "home": {
         "team": "SFG",
@@ -159,7 +178,8 @@
       "away": {
         "team": "STL",
         "starter": "Shelby Miller" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 1 },
     {
       "home": {
         "team": "SFG",
@@ -167,7 +187,8 @@
       "away": {
         "team": "STL",
         "starter": "Adam Wainwright" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 1 },
     {
       "home": {
         "team": "BAL",
@@ -175,7 +196,8 @@
       "away": {
         "team": "KCR",
         "starter": "James Shields" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 0 },
     {
       "home": {
         "team": "BAL",
@@ -183,7 +205,8 @@
       "away": {
         "team": "KCR",
         "starter": "Yordano Ventura" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 0 },
     {
       "home": {
         "team": "KCR",
@@ -191,7 +214,8 @@
       "away": {
         "team": "BAL",
         "starter": "Wei-Yin Chen" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 1 },
     {
       "home": {
         "team": "KCR",
@@ -199,7 +223,8 @@
       "away": {
         "team": "BAL",
         "starter": "Miguel Gonzalez" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 1 },
     {
       "home": {
         "team": "KCR",
@@ -207,7 +232,8 @@
       "away": {
         "team": "SFG",
         "starter": "Madison Bumgarner" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 0 },
     {
       "home": {
         "team": "KCR",
@@ -215,7 +241,8 @@
       "away": {
         "team": "SFG",
         "starter": "Jake Peavy" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 1 },
     {
       "home": {
         "team": "SFG",
@@ -223,7 +250,8 @@
       "away": {
         "team": "KCR",
         "starter": "Jeremy Guthrie" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 0 },
     {
       "home": {
         "team": "SFG",
@@ -231,7 +259,8 @@
       "away": {
         "team": "KCR",
         "starter": "Jason Vargas" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 1 },
     {
       "home": {
         "team": "SFG",
@@ -239,7 +268,8 @@
       "away": {
         "team": "KCR",
         "starter": "James Shields" },
-      "winner": "SFG" },
+      "winner": "SFG",
+      "x": 1 },
     {
       "home": {
         "team": "KCR",
@@ -247,7 +277,8 @@
       "away": {
         "team": "SFG",
         "starter": "Jake Peavy" },
-      "winner": "KCR" },
+      "winner": "KCR",
+      "x": 1 },
     {
       "home": {
         "team": "KCR",
@@ -255,7 +286,8 @@
       "away": {
         "team": "SFG",
         "starter": "Tim Hudson" },
-      "winner": "SFG" }
+      "winner": "SFG",
+      "x": 0 }
   ],
   "pitchers": {
     "Madison Bumgarner": {
