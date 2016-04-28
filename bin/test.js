@@ -1,3 +1,4 @@
+
 var fs = require('fs');
 var mlbGame = require('mlbgames');
 var mlbPlayer = require('mlbplayers');
@@ -10,15 +11,14 @@ var mlbgame = new mlbGame(options);
 var mlbplayer = new mlbPlayer(options);
 // var mlbprobablepitchers = new mlbprobablepitchers(options);
 
-mlbprobablepitchers.get('2015/05/23', function(err, pitchers) {
-  fs.writeFile('pitchers.json', JSON.stringify(pitchers, null, 4));
-});
-
-// mlbgame.get(function(err, games) {
-//   console.log(games[0]);
-//   console.log(games[0].linescore.inning);
+// mlbprobablepitchers.get('2015/05/23', function(err, pitchers) {
+//   fs.writeFile('pitchers.json', JSON.stringify(pitchers, null, 2));
 // });
 
+mlbgame.get(function(err, games) {
+  fs.writeFile('games.json', JSON.stringify(games, null, 2));
+});
+
 // mlbplayer.get(function(err, players) {
-//   fs.writeFile('players.json', JSON.stringify(players, null, 4));
+//   fs.writeFile('players.json', JSON.stringify(players, null, 2));
 // });
