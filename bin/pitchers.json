@@ -1,0 +1,354 @@
+[
+    {
+        "id": "2015/05/23/texmlb-nyamlb-1",
+        "startTime": "2015-05-23T13:05:00",
+        "easternTime": "2015-05-23T13:05:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "147",
+            "home": "140"
+        },
+        "pitchers": {
+            "away": {
+                "id": "607259",
+                "name": "Nick Martinez",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "282332",
+                "name": "CC Sabathia",
+                "throws": "LHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/seamlb-tormlb-1",
+        "startTime": "2015-05-23T13:07:00",
+        "easternTime": "2015-05-23T13:07:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "141",
+            "home": "136"
+        },
+        "pitchers": {
+            "away": {
+                "id": "572020",
+                "name": "James Paxton",
+                "throws": "LHP"
+            },
+            "home": {
+                "id": "279824",
+                "name": "Mark Buehrle",
+                "throws": "LHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/nynmlb-pitmlb-1",
+        "startTime": "2015-05-23T16:05:00",
+        "easternTime": "2015-05-23T16:05:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "134",
+            "home": "121"
+        },
+        "pitchers": {
+            "away": {
+                "id": "518774",
+                "name": "Matt Harvey",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "150359",
+                "name": "A.J. Burnett",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/phimlb-wasmlb-1",
+        "startTime": "2015-05-23T16:05:00",
+        "easternTime": "2015-05-23T16:05:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "120",
+            "home": "143"
+        },
+        "pitchers": {
+            "away": {
+                "id": "430935",
+                "name": "Cole Hamels",
+                "throws": "LHP"
+            },
+            "home": {
+                "id": "544931",
+                "name": "Stephen Strasburg",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/houmlb-detmlb-1",
+        "startTime": "2015-05-23T16:08:00",
+        "easternTime": "2015-05-23T16:08:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "116",
+            "home": "117"
+        },
+        "pitchers": {
+            "away": {
+                "id": "621121",
+                "name": "Lance McCullers",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "543456",
+                "name": "Kyle Lobstein",
+                "throws": "LHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/cinmlb-clemlb-1",
+        "startTime": "2015-05-23T16:10:00",
+        "easternTime": "2015-05-23T16:10:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "114",
+            "home": "113"
+        },
+        "pitchers": {
+            "away": {
+                "id": "543101",
+                "name": "Anthony DeSclafani",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "446372",
+                "name": "Corey Kluber",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/milmlb-atlmlb-1",
+        "startTime": "2015-05-23T16:10:00",
+        "easternTime": "2015-05-23T16:10:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "144",
+            "home": "158"
+        },
+        "pitchers": {
+            "away": {
+                "id": "571666",
+                "name": "Mike Fiers",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "571946",
+                "name": "Shelby Miller",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/minmlb-chamlb-1",
+        "startTime": "2015-05-23T15:10:00",
+        "easternTime": "2015-05-23T16:10:00",
+        "timezone": "CDT",
+        "teams": {
+            "away": "145",
+            "home": "142"
+        },
+        "pitchers": {
+            "away": {
+                "id": "543507",
+                "name": "Trevor May",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "519242",
+                "name": "Chris Sale",
+                "throws": "LHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/oakmlb-tbamlb-1",
+        "startTime": "2015-05-23T16:10:00",
+        "easternTime": "2015-05-23T16:10:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "139",
+            "home": "133"
+        },
+        "pitchers": {
+            "away": {
+                "id": "608665",
+                "name": "Kendall Graveman",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "501992",
+                "name": "Nathan Karns",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/sfnmlb-colmlb-1",
+        "startTime": "2015-05-23T14:10:00",
+        "easternTime": "2015-05-23T16:10:00",
+        "timezone": "MDT",
+        "teams": {
+            "away": "115",
+            "home": "137"
+        },
+        "pitchers": {
+            "away": {
+                "id": "518790",
+                "name": "Chris Heston",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "543475",
+                "name": "Jordan Lyles",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/sfnmlb-colmlb-2",
+        "startTime": "2015-05-23T19:10:00",
+        "easternTime": "2015-05-23T21:10:00",
+        "timezone": "MDT",
+        "teams": {
+            "away": "115",
+            "home": "137"
+        },
+        "pitchers": {
+            "away": {
+                "id": "433589",
+                "name": "Yusmeiro Petit",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "571735",
+                "name": "David Hale",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/balmlb-miamlb-1",
+        "startTime": "2015-05-23T19:15:00",
+        "easternTime": "2015-05-23T19:15:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "146",
+            "home": "110"
+        },
+        "pitchers": {
+            "away": {
+                "id": "605541",
+                "name": "Mike Wright",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "429717",
+                "name": "Dan Haren",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/anamlb-bosmlb-1",
+        "startTime": "2015-05-23T19:15:00",
+        "easternTime": "2015-05-23T19:15:00",
+        "timezone": "EDT",
+        "teams": {
+            "away": "111",
+            "home": "108"
+        },
+        "pitchers": {
+            "away": {
+                "id": "450351",
+                "name": "C.J. Wilson",
+                "throws": "LHP"
+            },
+            "home": {
+                "id": "453214",
+                "name": "Steven Wright",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/slnmlb-kcamlb-1",
+        "startTime": "2015-05-23T18:15:00",
+        "easternTime": "2015-05-23T19:15:00",
+        "timezone": "CDT",
+        "teams": {
+            "away": "118",
+            "home": "138"
+        },
+        "pitchers": {
+            "away": {
+                "id": "407793",
+                "name": "John Lackey",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "450172",
+                "name": "Edinson Volquez",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/chnmlb-arimlb-1",
+        "startTime": "2015-05-23T19:10:00",
+        "easternTime": "2015-05-23T22:10:00",
+        "timezone": "MST",
+        "teams": {
+            "away": "109",
+            "home": "112"
+        },
+        "pitchers": {
+            "away": {
+                "id": "453562",
+                "name": "Jake Arrieta",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "523989",
+                "name": "Rubby De La Rosa",
+                "throws": "RHP"
+            }
+        }
+    },
+    {
+        "id": "2015/05/23/sdnmlb-lanmlb-1",
+        "startTime": "2015-05-23T19:10:00",
+        "easternTime": "2015-05-23T22:10:00",
+        "timezone": "PDT",
+        "teams": {
+            "away": "119",
+            "home": "135"
+        },
+        "pitchers": {
+            "away": {
+                "id": "453178",
+                "name": "Ian Kennedy",
+                "throws": "RHP"
+            },
+            "home": {
+                "id": "502211",
+                "name": "Mike Bolsinger",
+                "throws": "RHP"
+            }
+        }
+    }
+]
