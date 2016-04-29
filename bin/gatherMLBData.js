@@ -144,14 +144,14 @@ function wrangleData(games, players, matchups, fileName, index) {
   games.forEach(function(game, i) {
     if (game.linescore) {
       var matchup = matchups[i];
-      if (matchup.id !== game.id) {
-        for (var i = 0; i < matchups.length; i++) {
-          if (matchups[i].id === game.id) {
-            matchup = matchups[i];
-            break;
-          }
-        }
-      }
+      // if (matchup.id !== game.id) {
+      //   for (var i = 0; i < matchups.length; i++) {
+      //     if (matchups[i].id === game.id) {
+      //       matchup = matchups[i];
+      //       break;
+      //     }
+      //   }
+      // }
       
       var win_pct = winningpercentage.calculateTeamWinningPercentages(game);
       var awayHitting = hitting.calculateTeamBattingStats(rosters[game.away_code]);
