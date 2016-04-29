@@ -1,17 +1,19 @@
-// import for writing data to file 
-var fs = require('fs');
+"use strict";
+// node packages
+const fs = require('fs');
+const async = require('async');
 // MLB API modules
-var gamesAPI = require('mlbgames');
-var playersAPI = require('mlbplayers');
-var startersAPI = require('mlbprobablepitchers');
+const gamesAPI = require('mlbgames');
+const playersAPI = require('mlbplayers');
+const startersAPI = require('mlbprobablepitchers');
 // Local stat calculation modules
-var hitting = require('./hitting');
-var pitching = require('./pitching');
-var winningpercentage = require('./winningpercentage');
-// Test data files
-var games = require('./games.json');
-var players = require('./players.json');
-var matchups = require('./pitchers.json');
+const hitting = require('./hitting');
+const pitching = require('./pitching');
+const winningpercentage = require('./winningpercentage');
+// Integer array creation
+const range = require('./range');
+// MLB season dates for data pulling
+const dates = require('./dates.json');
     
 //
 // sample desired data object
@@ -35,13 +37,96 @@ var matchups = require('./pitchers.json');
 //   x: 0
 // }
 // 
+var dir = '../data/';
 
-wrangleData();
+var apiDates = [];
+dates.forEach(function(season) {
+  var year = season.year;
+  season.months.forEach(function(month) {
+    range.create(month.firstDay,month.lastDay+1).forEach(function(day) {
+      if (day < 10) day = '0'+day;
+      apiDates.push({
+        fileName: dir + year +'_'+ month.month +'_'+ day +'.json',
+        games: 'year_'+ year +'/month_'+ month.month +'/day_'+ day +'/',
+        players: 'year_'+ year +'/month_'+ month.month +'/day_'+ day +'/',
+        matchups: year +'/'+ month.month +'/'+ day
+      });
+    });
+  });
+});
 
+// start the whole process running
+processDate(apiDates, 0);
 
-function wrangleData() {
-  console.log('Wrangling Data');
+function processDate(apiDates, index) {
+  if (index < apiDates.length) {
+    gatherData(apiDates[index], index);
+  } else {
+    Console.log('Finished gathering data');
+  }
+}
+
+function gatherData(apiDate, index) {
+  console.time('write-data');
+  console.log('--------------------------------------------------------------');
+  console.log('Gathering data for: '+ apiDate.matchups);
   
+  // create mlb and data objects
+  console.log(apiDate);
+  var mlbgames = new gamesAPI({ path: apiDate.games });
+  var mlbplayers = new playersAPI({ path: apiDate.players });
+  var games, players, matchups;
+  var count = 0; // async counter
+  
+  // make api requests
+  console.log('Gathering games data...')
+  mlbgames.get(function(err, data) {
+    if (err) console.error(err); 
+    else {
+      console.log('Games data retrived');
+      games = data;
+      count += 1;
+    }
+    if (count == 3) {
+      wrangleData(games, players, matchups, apiDate.fileName);
+      processDate(apiDates, index+1);
+      console.timeEnd('write-data');
+    }
+  });
+  
+  console.log('Gathering players data...');
+  mlbplayers.get(function(err, data) {
+    if (err) console.error(err); 
+    else {
+      console.log('Players data retrieved');
+      players = data;
+      count += 1;
+    }
+    if (count == 3) {
+      wrangleData(games, players, matchups, apiDate.fileName);
+      processDate(apiDates, index+1);
+      console.timeEnd('write-data');
+    }
+  });
+  
+  console.log('Gathering pitching matchups data...');
+  startersAPI.get(apiDate.matchups, function(err, data) {
+    if (err) console.error(err);
+    else {
+      console.log('Pitching matchups data retrieved');
+      matchups = data;
+      count += 1;
+    }
+    if (count == 3) {
+      wrangleData(games, players, matchups, apiDate.fileName);
+      processDate(apiDates, index+1);
+      console.timeEnd('write-data');
+    }
+  });
+}
+
+function wrangleData(games, players, matchups, fileName, index) {
+  console.log('Cleaning data and wrangling into proper format...');
   var rosters = hitting.buildRosters(players);
   var pitchers = pitching.buildPitcherMap(players);
   
@@ -75,5 +160,6 @@ function wrangleData() {
       x: (+game.linescore.r.home > +game.linescore.r.away) ? 1 : 0 };
     gamesStats.push(gameStats);
   });
-  console.log(gamesStats);
+  
+  fs.writeFile(fileName, JSON.stringify(gamesStats));
 }

@@ -4,24 +4,29 @@
     "months": [
       {
         "name": "May",
-        "month": "5",
-        "last": "31" },
+        "month": "05",
+        "firstDay": 1,
+        "lastDay": 31 },
       {
         "name": "June",
-        "month": "6",
-        "last": "30" },
+        "month": "06",
+        "firstDay": 1,
+        "lastDay": 30 },
       {
         "name": "July",
-        "month": "7",
-        "last": "31" },
+        "month": "07",
+        "firstDay": 1,
+        "lastDay": 31 },
       {
         "name": "August",
-        "month": "8",
-        "last": "30", },
+        "month": "08",
+        "firstDay": 1,
+        "lastDay": 30 },
       {
         "name": "September",
-        "month": "9",
-        "last": "28" }
+        "month": "09",
+        "firstDay": 1,
+        "lastDay": 28 }
     ]
   }
 ]
