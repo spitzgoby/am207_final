@@ -1,7 +1,6 @@
 "use strict";
 // node packages
 const fs = require('fs');
-const async = require('async');
 // MLB API modules
 const gamesAPI = require('mlbgames');
 const playersAPI = require('mlbplayers');
@@ -67,7 +66,6 @@ function processDate(apiDates, index) {
 }
 
 function gatherData(apiDate, index) {
-  console.time('write-data');
   console.log('--------------------------------------------------------------');
   console.log('Gathering data for: '+ apiDate.matchups);
   
@@ -81,7 +79,9 @@ function gatherData(apiDate, index) {
   // make api requests
   console.log('Gathering games data...')
   mlbgames.get(function(err, data) {
-    if (err) console.error(err); 
+    if (err) {
+      handleAPIError(err, index);
+    }
     else {
       console.log('Games data retrived');
       games = data;
@@ -90,13 +90,14 @@ function gatherData(apiDate, index) {
     if (count == 3) {
       wrangleData(games, players, matchups, apiDate.fileName);
       processDate(apiDates, index+1);
-      console.timeEnd('write-data');
     }
   });
   
   console.log('Gathering players data...');
   mlbplayers.get(function(err, data) {
-    if (err) console.error(err); 
+    if (err) {
+      handleAPIError(err, index);
+    }
     else {
       console.log('Players data retrieved');
       players = data;
@@ -105,13 +106,14 @@ function gatherData(apiDate, index) {
     if (count == 3) {
       wrangleData(games, players, matchups, apiDate.fileName);
       processDate(apiDates, index+1);
-      console.timeEnd('write-data');
     }
   });
   
   console.log('Gathering pitching matchups data...');
   startersAPI.get(apiDate.matchups, function(err, data) {
-    if (err) console.error(err);
+    if (err) {
+      handleAPIError(err, index);
+    }
     else {
       console.log('Pitching matchups data retrieved');
       matchups = data;
@@ -120,9 +122,17 @@ function gatherData(apiDate, index) {
     if (count == 3) {
       wrangleData(games, players, matchups, apiDate.fileName);
       processDate(apiDates, index+1);
-      console.timeEnd('write-data');
     }
   });
+}
+
+function handleAPIError(err, index) {
+  if (err.code === 'ECONNRESET') {
+    // connection was reset, continue gathering data at current location
+    processDate(apiDates, index);
+  } else {
+    console.error(err);
+  }
 }
 
 function wrangleData(games, players, matchups, fileName, index) {
@@ -132,33 +142,40 @@ function wrangleData(games, players, matchups, fileName, index) {
   
   var gamesStats = [];
   games.forEach(function(game, i) {
-    var matchup = matchups[i];
-    if (matchup.id !== game.id) {
-      // find correct matchup
+    if (game.linescore) {
+      var matchup = matchups[i];
+      if (matchup.id !== game.id) {
+        for (var i = 0; i < matchups.length; i++) {
+          if (matchups[i].id === game.id) {
+            matchup = matchups[i];
+            break;
+          }
+        }
+      }
+      
+      var win_pct = winningpercentage.calculateTeamWinningPercentages(game);
+      var awayHitting = hitting.calculateTeamBattingStats(rosters[game.away_code]);
+      var awayPitching = pitching.calculatePitchingStats(pitchers[matchup.pitchers.away.id]);
+      var homeHitting = hitting.calculateTeamBattingStats(rosters[game.home_code]);
+      var homePitching = pitching.calculatePitchingStats(pitchers[matchup.pitchers.home.id]);
+      var gameStats = { 
+        away:{
+          team:game.away_code,
+          win_pct: win_pct.away,
+          avg: awayHitting.avg,
+          ops: awayHitting.ops,
+          era: awayPitching.era,
+          fip: awayPitching.fip },
+        home:{
+          team:game.home_code,
+          win_pct: win_pct.home,
+          avg: homeHitting.avg,
+          ops: homeHitting.ops,
+          era: homePitching.era,
+          fip: homePitching.fip },
+        x: (+game.linescore.r.home > +game.linescore.r.away) ? 1 : 0 };
+      gamesStats.push(gameStats);
     }
-    
-    var win_pct = winningpercentage.calculateTeamWinningPercentages(game);
-    var awayHitting = hitting.calculateTeamBattingStats(rosters[game.away_code]);
-    var awayPitching = pitching.calculatePitchingStats(pitchers[matchup.pitchers.away.id]);
-    var homeHitting = hitting.calculateTeamBattingStats(rosters[game.home_code]);
-    var homePitching = pitching.calculatePitchingStats(pitchers[matchup.pitchers.home.id]);
-    var gameStats = { 
-      away:{
-        team:game.away_code,
-        win_pct: win_pct.away,
-        avg: awayHitting.avg,
-        ops: awayHitting.ops,
-        era: awayPitching.era,
-        fip: awayPitching.fip },
-      home:{
-        team:game.home_code,
-        win_pct: win_pct.home,
-        avg: homeHitting.avg,
-        ops: homeHitting.ops,
-        era: homePitching.era,
-        fip: homePitching.fip },
-      x: (+game.linescore.r.home > +game.linescore.r.away) ? 1 : 0 };
-    gamesStats.push(gameStats);
   });
   
   fs.writeFile(fileName, JSON.stringify(gamesStats));
