@@ -10,7 +10,10 @@ var dataFileNames = fs.readdirSync(dir);
 var combinedData = [];
 dataFileNames.forEach(function(fileName) {
   var games = JSON.parse(fs.readFileSync(dir+fileName, 'utf8'));
+  console.log('Read: ', fileName);
   combinedData = combinedData.concat(games);
 });
 // write combined array to disk
-fs.writeFile(dir+'combinedMLBData.json', JSON.stringify(combinedData));
+fs.writeFile(dir+'combinedMLBData.json', JSON.stringify(combinedData), 'utf-8', function(err) {
+  console.log(err);
+});
